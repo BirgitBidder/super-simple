@@ -34,10 +34,18 @@ body {
 .main-nav a:hover {
   color: goldenrod;
 }
+.main-nav a {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: #333;
+  text-decoration: none;
+}
 
+.main-nav a:hover {
+  color: goldenrod;
+}
 /* Hero */
 .hero {
-  .hero {
   position: relative;
   height: 80vh;
   width: 100%;
