@@ -60,7 +60,7 @@ body {
   overflow: hidden;
 }
 .logo {
-  height: 40px; /* eller vad som passar din layout */
+  height: 80px; /* eller vad som passar din layout */
   margin-right: 1rem;
   vertical-align: middle;
 }
