@@ -14,40 +14,30 @@ body {
 
 /* Meny */
 .main-nav {
-  position: fixed;
-  top: 5%;
-  right: 5%;
-  width: auto;
-  background: transparent; /* Ingen bakgrund */
-  padding: 0;
+  position: absolute;
+  top: 50%;
+  right: 3%;
+  transform: translateY(-50%);
   z-index: 10;
+  text-align: right;
 }
-
 .main-nav ul {
   list-style: none;
-  display: flex;
-  flex-direction: column; /* Vertikal meny */
-  gap: 1rem;
 }
-
 .main-nav li {
-  display: block;
-  margin: 0;
+  margin: 1rem 0;
 }
-
 .main-nav a {
   font-family: 'Poppins', sans-serif;
-  font-weight: 400; /* inte fet */
-  color: white;
+  font-weight: 400;
+  font-size: 1.2rem; /* Gör texten större */
+  text-transform: uppercase;
+  color: #ff9900; /* Orange standardfärg */
   text-decoration: none;
-  text-transform: uppercase; /* versaler */
-  letter-spacing: 2px;
-  font-size: 1rem;
   transition: color 0.3s ease;
 }
-
 .main-nav a:hover {
-  color: goldenrod;
+  color: #ffffff; /* Vit på hover */
 }
 
 /* Hero */
