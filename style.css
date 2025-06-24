@@ -37,23 +37,26 @@ body {
 
 /* Hero */
 .hero {
+  .hero {
   position: relative;
-  height: 80vh; /* justera om du vill ha annan höjd */
+  height: 80vh;
+  width: 100%;
   background-image: url("img/birgit-hero.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end; /* text till höger */
   align-items: center;
-  text-align: center;
+  text-align: right; /* text inriktad höger */
   color: white;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+  padding-right: 5%; /* lite luft till höger */
 }
 
 .hero__text {
   z-index: 1;
-  max-width: 600px; /* för att texten inte blir för bred */
+  max-width: 600px;
   padding: 0 1rem;
 }
 
