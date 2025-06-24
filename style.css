@@ -14,21 +14,17 @@ body {
 
 /* Stor logga, centrerad överst */
 .hero-logo {
-  width: 100%;
+  position: absolute;
+  bottom: 30px;       /* 30px från botten, justera efter behov */
+  left: 50%;          /* Centrerar horisontellt */
+  transform: translateX(-50%);
+  z-index: 10;
   text-align: center;
-  padding: 20px 0;
-  background: transparent;
-  position: fixed;  /* ligger kvar överst vid scroll */
-  top: 0;
-  left: 0;
-  z-index: 20;
 }
-
 .logo-large {
-  max-height: 120px; /* justera storlek här */
-  width: auto;
-  height: auto;
-  filter: invert(1); /* tar bort eller behåll beroende på om loggan är vit eller svart */
+  height: 80px; /* ändra till vad som passar */
+  max-width: 90vw;
+  filter: invert(1); /* om du vill behålla vit logga */
 }
 
 /* Meny */
