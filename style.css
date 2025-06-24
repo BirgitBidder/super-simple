@@ -37,24 +37,67 @@ body {
 
 /* Hero */
 .hero {
-  height: 80vh;
+  position: relative;
+  height: 80vh; /* justera om du vill ha annan höjd */
   background-image: url("img/birgit-hero.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
-  position: relative;
-}
-.hero-overlay {
-  position: absolute;
-  bottom: 20%;
-  right: 10%;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   color: white;
-  text-align: right;
-  text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
 }
-.hero-overlay h1 {
-  font-size: 3rem;
+
+.hero__text {
+  z-index: 1;
+  max-width: 600px; /* för att texten inte blir för bred */
+  padding: 0 1rem;
 }
-.hero-overlay p {
-  font-size: 1.2rem;
+
+.hero__text h1 {
+  font-size: 6vw; /* responsiv storlek */
+  font-family: "Rockville Solid Regular", cursive;
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+
+.hero__text p {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.hero__text .play-btn {
+  font-size: 26px;
+  color: #5c00ce;
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  display: inline-block;
+  line-height: 90px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.hero__text .play-btn i {
+  position: relative;
+  top: 2px;
+  left: 2px;
+}
+
+.hero__text .play-btn:after {
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  height: 60px;
+  width: 60px;
+  background: #ffffff;
+  border-radius: 50%;
+  content: "";
+  z-index: -1;
 }
