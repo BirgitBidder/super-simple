@@ -142,18 +142,15 @@ body {
 /* Countdown */
 .countdown {
   position: absolute;
-  top: 50%;         /* ungefär mitten på sidan */
-  right: 40px;      /* vid menyn, lite in från kanten */
+  top: 50%;
+  right: 40px;
   transform: translateY(-50%);
-  color: #ff9900;   /* samma orange som menyn */
+  color: #ff9900;
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
   font-size: 1.5rem;
   text-align: right;
   z-index: 20;
-  background: rgba(0,0,0,0.4); /* lite bakgrund för kontrast */
-  padding: 1rem;
-  border-radius: 8px;
   max-width: 250px;
 }
 
