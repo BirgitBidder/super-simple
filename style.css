@@ -139,6 +139,29 @@ body {
   z-index: -1;
 }
 
+/* Countdown */
+.countdown {
+  position: absolute;
+  top: 50%;         /* ungefär mitten på sidan */
+  right: 40px;      /* vid menyn, lite in från kanten */
+  transform: translateY(-50%);
+  color: #ff9900;   /* samma orange som menyn */
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  text-align: right;
+  z-index: 20;
+  background: rgba(0,0,0,0.4); /* lite bakgrund för kontrast */
+  padding: 1rem;
+  border-radius: 8px;
+  max-width: 250px;
+}
+
+.countdown-label {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
 /* Responsiv */
 @media (max-width: 600px) {
   .hero__text h1 {
@@ -162,25 +185,4 @@ body {
   .main-nav a {
     font-size: 1rem;
   }
-.countdown {
-  position: absolute;
-  top: 50%;         /* ungefär mitten på sidan */
-  right: 40px;      /* vid menyn, lite in från kanten */
-  transform: translateY(-50%);
-  color: #ff9900;   /* samma orange som menyn */
-  font-family: 'Poppins', sans-serif;
-  font-weight: 600;
-  font-size: 1.5rem;
-  text-align: right;
-  z-index: 20;
-  background: rgba(0,0,0,0.4); /* lite bakgrund för kontrast */
-  padding: 1rem;
-  border-radius: 8px;
-  max-width: 250px;
-}
-
-.countdown-label {
-  margin-bottom: 0.5rem;
-  font-size: 1.1rem;
-}
 }
