@@ -15,14 +15,15 @@ body {
 /* Meny */
 .main-nav {
   position: absolute;
-  top: 50%;
-  right: 3%;
-  transform: translateY(-50%);
+  top: 40px; /* Flyttar menyn uppåt – ändra siffran för mer/mindre */
+  right: 40px; /* Flyttar menyn lite in från höger */
   z-index: 10;
   text-align: right;
 }
 .main-nav ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 .main-nav li {
   margin: 1rem 0;
@@ -30,14 +31,14 @@ body {
 .main-nav a {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
-  font-size: 1.2rem; /* Gör texten större */
+  font-size: 1.2rem;
   text-transform: uppercase;
-  color: #ff9900; /* Orange standardfärg */
+  color: #ff9900;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 .main-nav a:hover {
-  color: #ffffff; /* Vit på hover */
+  color: #ffffff;
 }
 
 /* Hero */
@@ -60,9 +61,11 @@ body {
 }
 
 .hero__text {
+  position: relative;
+  top: 100px; /* Flytta texten längre ned på sidan */
+  z-index: 1;
   max-width: 600px;
   padding: 0 1rem;
-  color: white;
 }
 
 .hero__text h1 {
