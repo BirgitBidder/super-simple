@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.4;
+}
+
+/* Meny */
+.main-nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 1rem 0;
+  z-index: 10;
+}
+.main-nav ul {
+  list-style: none;
+}
+.main-nav li {
+  display: inline-block;
+  margin: 0 1.5rem;
+}
+.main-nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+.main-nav a:hover {
+  color: goldenrod;
+}
+
+/* Hero */
+.hero {
+  height: 80vh;
+  background: url("img/birgit-hero.jpg") center/cover no-repeat;
+  position: relative;
+}
+.hero-overlay {
+  position: absolute;
+  bottom: 20%;
+  right: 10%;
+  color: white;
+  text-align: right;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+}
+.hero-overlay h1 {
+  font-size: 3rem;
+}
+.hero-overlay p {
+  font-size: 1.2rem;
+}
