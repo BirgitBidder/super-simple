@@ -117,3 +117,25 @@ body {
   content: "";
   z-index: -1;
 }
+@media (max-width: 600px) {
+  .hero__text h1 {
+    font-size: 8vw;
+  }
+
+  .hero__text p {
+    font-size: 1rem;
+  }
+
+  .logo {
+    height: 30px;
+  }
+
+  .main-nav {
+    top: 20px;
+    right: 20px;
+  }
+
+  .main-nav a {
+    font-size: 1rem;
+  }
+}
