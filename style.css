@@ -112,3 +112,7 @@ body {
   content: "";
   z-index: -1;
 }
+
+{
+  font-family: 'Poppins', sans-serif !important;
+}
