@@ -59,7 +59,11 @@ body {
   padding-top: 15vh; /* Lite luft ovanför texten */
   overflow: hidden;
 }
-
+.logo {
+  height: 40px; /* eller vad som passar din layout */
+  margin-right: 1rem;
+  vertical-align: middle;
+}
 .hero__text {
   position: relative;
   top: 100px; /* Flytta texten längre ned på sidan */
