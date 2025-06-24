@@ -12,22 +12,44 @@ body {
   color: white;
 }
 
+/* Stor logga, centrerad överst */
+.hero-logo {
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+  background: transparent;
+  position: fixed;  /* ligger kvar överst vid scroll */
+  top: 0;
+  left: 0;
+  z-index: 20;
+}
+
+.logo-large {
+  max-height: 120px; /* justera storlek här */
+  width: auto;
+  height: auto;
+  filter: invert(1); /* tar bort eller behåll beroende på om loggan är vit eller svart */
+}
+
 /* Meny */
 .main-nav {
   position: absolute;
-  top: 40px; /* Flyttar menyn uppåt – ändra siffran för mer/mindre */
-  right: 40px; /* Flyttar menyn lite in från höger */
+  top: 40px; /* justera höjd */
+  right: 40px; /* flyttar in från höger */
   z-index: 10;
   text-align: right;
 }
+
 .main-nav ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
+
 .main-nav li {
   margin: 1rem 0;
 }
+
 .main-nav a {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
@@ -37,6 +59,7 @@ body {
   text-decoration: none;
   transition: color 0.3s ease;
 }
+
 .main-nav a:hover {
   color: #ffffff;
 }
@@ -44,29 +67,31 @@ body {
 /* Hero */
 .hero {
   position: relative;
-  height: 100vh;  /* Fyller hela skärmen */
+  height: 100vh;  /* fyller hela skärmen */
   width: 100vw;
   background-image: url("img/birgit-hero.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
-  justify-content: flex-end; /* Text till höger */
-  align-items: flex-start;  /* Text startar från toppen */
+  justify-content: flex-end; /* text till höger */
+  align-items: flex-start;  /* text startar från toppen */
   text-align: right;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
   padding-right: 5%;
-  padding-top: 15vh; /* Lite luft ovanför texten */
+  padding-top: 160px; /* luft för loggan + padding */
   overflow: hidden;
 }
+
 .logo {
-  height: 80px; /* eller vad som passar din layout */
+  height: 80px; /* kan tas bort om du inte använder liten logga */
   margin-right: 1rem;
   vertical-align: middle;
 }
+
 .hero__text {
   position: relative;
-  top: 100px; /* Flytta texten längre ned på sidan */
+  top: 100px; /* flytta texten längre ned på sidan */
   z-index: 1;
   max-width: 600px;
   padding: 0 1rem;
@@ -117,6 +142,8 @@ body {
   content: "";
   z-index: -1;
 }
+
+/* Responsiv */
 @media (max-width: 600px) {
   .hero__text h1 {
     font-size: 8vw;
@@ -126,8 +153,9 @@ body {
     font-size: 1rem;
   }
 
-  .logo {
-    height: 30px;
+  .logo-large {
+    max-height: 80px;
+    filter: invert(1); /* behåll eller ta bort */
   }
 
   .main-nav {
@@ -138,18 +166,4 @@ body {
   .main-nav a {
     font-size: 1rem;
   }
-
-.hero-logo {
-  position: absolute;
-  top: 30px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 10;
-  text-align: center;
-}
-
-.logo-large {
-  height: 80px; /* Justera som du vill: 80–120px kanske */
-  max-width: 90vw;
-  filter: invert(1); /* Gör svart logga vit – ta bort om du har vit redan */
 }
